@@ -7,7 +7,7 @@ function [prob, ns] = selectcomps(budget, costs, probs)
     assert(length(costs) == length(probs));
     N = length(costs);
 
-    % The value function.
+    % Store the computed value function here.
     V = zeros(length(costs), budget);
     
     % Quantity of each component type.
